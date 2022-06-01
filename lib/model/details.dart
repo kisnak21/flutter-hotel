@@ -51,7 +51,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                             Navigator.pop(context);
                           },
                           icon: Icon(
-                            Icons.arrow_back_ios,
+                            Icons.arrow_back_ios_new,
                             size: 15,
                           ),
                         ),
@@ -91,7 +91,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       children: [
                         Text('Price',style: TextStyle(color: Colors.grey),),
                         SizedBox(height: 10,),
-                        Text('${widget.hotel.price} Tk '),
+                        Text('Rp ${widget.hotel.price} '),
                       ],
                     ),
                   ),
@@ -104,10 +104,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
                         Row(
                           children: [
                             Text(widget.hotel.rating.toString()),
-                            Icon(Icons.star,size: 12,color: Colors.red,),
-                            Icon(Icons.star,size: 12,color: Colors.red),
-                            Icon(Icons.star,size: 12,color: Colors.red),
-                            Icon(Icons.star_half,size: 12,color: Colors.red),
+                            Icon(Icons.star,color: Colors.amber,size:15,),
+                            
                           ],
                         ),
                       ],
@@ -169,7 +167,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                   ),
                                   child: Center(
                                     child: Text(
-                                      '+3',style: TextStyle(
+                                      '+9',style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 14
                                     ),
@@ -187,7 +185,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10,left: 20),
-              child: Text('Amenity',
+              child: Text('Facilities',
               style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700),),
             ),
             SizedBox(height: 10,),

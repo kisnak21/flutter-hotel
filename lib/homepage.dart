@@ -4,15 +4,10 @@ import 'package:flutter_hotel/hotelpackage.dart';
 import 'package:flutter_hotel/model/hotel.dart';
 import 'package:flutter_hotel/model/details.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+   HomePage({Key? key}) : super(key: key);
 
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  final hotel = Hotel.hotellist();
+final hotel = Hotel.hotellist();
 
   @override
   Widget build(BuildContext context) {
@@ -228,4 +223,8 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+  
 }
+
+
+  
